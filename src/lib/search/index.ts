@@ -1,4 +1,5 @@
 import MetaSearchAgent from '@/lib/search/metaSearchAgent';
+import MCPSearchAgent from '../chains/mcpSearchAgent';
 import prompts from '../prompts';
 
 export const searchHandlers: Record<string, MetaSearchAgent> = {
@@ -49,6 +50,15 @@ export const searchHandlers: Record<string, MetaSearchAgent> = {
   }),
   redditSearch: new MetaSearchAgent({
     activeEngines: ['reddit'],
+    queryGeneratorPrompt: prompts.webSearchRetrieverPrompt,
+    responsePrompt: prompts.webSearchResponsePrompt,
+    queryGeneratorFewShots: prompts.webSearchRetrieverFewShots,
+    rerank: true,
+    rerankThreshold: 0.3,
+    searchWeb: true,
+  }),
+  mcpSearch: new MCPSearchAgent({
+    activeEngines: [],
     queryGeneratorPrompt: prompts.webSearchRetrieverPrompt,
     responsePrompt: prompts.webSearchResponsePrompt,
     queryGeneratorFewShots: prompts.webSearchRetrieverFewShots,

@@ -20,7 +20,7 @@ Want to know more about its architecture and how it works? You can read it [here
 
 ⚡ **Smart search modes** - Choose Balanced Mode for everyday searches, Fast Mode when you need quick answers, or wait for Quality Mode (coming soon) for deep research.
 
-🎯 **Six specialized focus modes** - Get better results with modes designed for specific tasks: Academic papers, YouTube videos, Reddit discussions, Wolfram Alpha calculations, writing assistance, or general web search.
+🎯 **Seven specialized focus modes** - Get better results with modes designed for specific tasks: Academic papers, YouTube videos, Reddit discussions, Wolfram Alpha calculations, writing assistance, MCP tool integration, or general web search.
 
 🔍 **Web search powered by SearxNG** - Access multiple search engines while keeping your identity private. Support for Tavily and Exa coming soon for even better results.
 
@@ -35,6 +35,8 @@ Want to know more about its architecture and how it works? You can read it [here
 📚 **Discover** - Browse interesting articles and trending content throughout the day. Stay informed without even searching.
 
 🕒 **Search history** - Every search is saved locally so you can revisit your discoveries anytime. Your research is never lost.
+
+🔧 **MCP (Model Context Protocol) integration** - Connect to external tools and data sources via MCP servers. Leverage specialized tools alongside web search for enhanced capabilities. See [MCP Quick Start](docs/MCP_QUICK_START.md) for details.
 
 ✨ **More coming soon** - We're actively developing new features based on community feedback. Join our Discord to help shape Perplexica's future!
 

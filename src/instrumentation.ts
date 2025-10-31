@@ -9,5 +9,16 @@ export const register = async () => {
     }
 
     await import('./lib/config/index');
+
+    // Initialize MCP system
+    try {
+      console.log('Initializing MCP system...');
+      const { initializeMCP } = await import('./lib/mcp');
+      await initializeMCP();
+      console.log('MCP system initialized successfully');
+    } catch (error) {
+      console.error('Failed to initialize MCP system:', error);
+      // Don't fail the app if MCP initialization fails
+    }
   }
 };
